@@ -1,0 +1,165 @@
+## Overview
+
+The class project has now been released. If you do not have commit access (or worse, aren't yet in a team), please let the coordinator know ASAP.
+
+[https://gitlab.une.edu.au/cosc220-2016/sense-o-matic](https://gitlab.une.edu.au/cosc220-2016/sense-o-matic)
+
+The project marks fall into a few categories
+
+* Design video & crits - some marks set aside for the early design work
+
+* Contribution - Is the team making a reasonable contribution to the project?
+
+* Quality - Is the team's work of good quality?
+
+* Integration - How well-integrated is the team's work with the rest of the system (including other teams' work)?
+
+* Participation - Is the team committing early and often? Are they communicating their design to the class? Is it well documented? 
+
+* Engineering - Does the team's work make use of the engineering techniques we discuss in the class? Are there tests? Have they considered how design patterns are used? 
+
+### Individual contribution rule
+
+If I cannot find evidence of a student contributing significantly in the group, that student will only be eligible for 50% of the mark of the rest of the team. 
+
+If I can only find evidence of non-code contributions, they will only be eligible for 75% of the team mark. (Tests are code, and count as code for this rule).
+
+If the the other members of the team assure me that despite appearances the student has contributed, (eg you've been doing pair programming but only committed under one team member's name), this rule may be waived or the percentage increased.
+
+This is one of the reasons it's vitally important you set your email address in your commits...
+
+## Design video & critiques
+
+There are two  
+
+
+In assignment 1, I expect there are teams who are still getting to grips with all the tools we are introducing. The step from individual development to collaborating on a project, with all the tools that entails, can be a significant one. 
+
+This is the smaller-weighted assignment, and it is due at the beginning of the half-term break.
+
+Here's what I expect:
+
+Issue (user story)
+
+Your team should create an issue on GitHub, describing the first feature you will implement. 
+
+Create the issue ASAP, and refine it over the next week or so. Don't wait until your team has fully decided all the details to create the issue. 
+
+Somewhere in here there should be a user story. The user of your feature might be the player, or it might be other teams -- it depends what you decide to implement.
+
+eg: "As a player, I would like to be able to trade items with an NPC in the game"
+
+eg: "An action replay system (a non-player user of your feature), would like to be able to retrieve a preserved history of the last 500 events in the world"
+
+It is up to your team to decide what you will implement. But it should integrate well with the rest of the system. For instance, if you were to develop the preserved history, you would need to ensure there's a good API so that an action history could use it. 
+
+You should also include an outline of what you will implement
+
+eg: "To implement the trading NPC, we will build a simple inventory system that the player and NPC have, an NPC in Little Snoring (that doesn't move, so no AI), and a dialog that can be opened when you are in range of the NPC for trading items
+
+eg: "To implement the action recording, we will build a database table to store the events in, code that saves and retrieves action messages to the table, and messages for requesting the last 500 items and returning them."
+
+You should include a link to the feature's wiki page (also on GitHub).
+
+Wiki page
+
+The main documentation for your API or feature will be in a Wiki Page on GitHub
+
+This page should repeat the user story and summary (for context) but then go into more detail on:
+
+how your feature will work. What will be the main parts in terms of the code?
+
+how will these be organised?
+
+if your feature offers an API, brief documentation of the API (what are the main methods and what do they do?)
+
+(In assignment 2, we'll add UML diagrams, thoughts on what patterns it uses, etc. But for now we just need the high level design)
+
+Commenting on related features
+
+No team is an island! I would like teams to read the issues of other teams, and comment on their designs.
+
+Your team is expected to have commented on at least three other team's issues. (Objective, actionable, constructive, and useful comments, not just "great job!")
+
+Some code, with tests, merged into master
+
+At assignment 1, you do not need to have completed your feature!
+
+But you do need to have pushed to master some code, with at least fivemeaningful tests. 
+
+Generally, I would recommend commiting (early) skeletons of the main classes in your feature. And then add tests and code for part of what you need.
+
+For example, a team implementing an NPC shop might commit a skeleton of their item and inventory classes. Then the might add a little behaviour (such as trading an item from one inventory to another) and a test for that. And then a bit more behaviour, and another test...
+
+Again, try to do your development in public rather than in private -- there are some smart students in the course, and you might find you get useful advice not just from the coordinator.
+
+A short video about what your team is doing
+
+You should submit a short (five-minute) video explaining what your team is implemented to the class. This will be viewed and commented on by a random selection of other students in the class. It is an opportunity to get each others' advice.  The video should be linked from your team's wiki page.
+
+The marking survey for this (completed by me and the other reviewers) will be four yes/no questions (plus a field for offering feedback):
+
+Was it clear what the team is trying to do?
+Was it clear what they have done?
+Was it clear what problems they have encountered or overcome?
+Was it clear what advice or feedback they would like to receive?
+You are encouraged to use those questions as a template for what to put in your video...
+
+(Note that there are no marks for the production values of the video.)
+
+Commenting on the videos of others
+
+Each student will be randomly allocated three other team's videos to watch, rate, and provide feedback on.
+
+Your advice / feedback (just the open-ended text, not the yes/no answers) will then be marked by the teams you commented on:
+
+Was it clear?
+Was it objective?
+Was it actionable?
+Was it helpful?
+Contribution summary
+
+To ensure I don't miss your contribution to the project, you're going to tell me where to look. I will open a second repository, to which you will push a text file, named the same as your group, containing:
+
+The names and email addresses of your group (the ones you used for GitHub commits)
+Your issue number (or numbers)
+A list of the main classes you have worked on
+A list of the tests you have created
+A description of any difficulties you had to overcome (eg, if you hit a particular issue that was very hard to debug but was eventually fixed with a small amount of code, so might look like a smaller contribution than it was)
+A short summary of what each of you did on the project.
+
+The contribution summary itself is not worth marks, but ensures you don't miss out on marks through me not finding your work!
+
+The contribution summary should be pushed as a text file (which may be in Markdown format) to the git repository at https://github.com/UNEsestudio/classprojectnotes2015
+
+Due dates:
+
+Tickets, code, tests, wiki documentation, videos, contribution summary are due Friday 21 August. 
+
+Comments on others' presentations are due by the first day after the mid-term break.
+
+Marking for assignment 1
+
+Contribution (30%)
+
+Includes code, issue, wiki, and your video
+
+Quality (20%)
+
+Includes code, issue, and wiki
+
+Integration (10%)
+
+Is the design well-integrated into how the system works?
+
+Participation (20%)
+
+Commiting and commenting regularly (not just last-minute rush)?
+
+Commented (in a timely manner) on other's issues?
+
+Whether you provided clear, objective, actionable, and helpful feedback to other group's videos.
+
+Engineering (20%)
+
+The presence, quality, and significance of your tests

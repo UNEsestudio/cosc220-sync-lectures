@@ -1,0 +1,32 @@
+@startuml
+skinparam linetype ortho
+skinparam shadowing false
+skinparam backgroundColor transparent
+skinparam class {
+  BackgroundColor transparent
+  BorderColor Black
+  ArrowColor Black
+}
+
+hide circle
+
+interface Component << interface >> {
+  {abstract} action();
+}
+
+class Leaf {
+  action();
+}
+
+class Composite {
+  action();
+}
+
+Component <|-- Leaf
+
+
+Composite "*" o-right->  Component : components
+Composite -up-|> Component
+
+
+@enduml

@@ -1,0 +1,33 @@
+@startuml
+skinparam linetype ortho
+skinparam shadowing false
+skinparam backgroundColor transparent
+skinparam class {
+  BackgroundColor transparent
+  BorderColor Black
+  ArrowColor Black
+}
+
+hide circle
+
+
+interface Notifier << interface >> {
+  {abstract} notify()
+}
+
+class EmailNotifier extends Notifier {
+  notify()
+}
+
+class SlackNotifier extends Notifier {
+  notify()
+}
+
+class SMSNotifier extends Notifier {
+  notify()
+}
+
+WatchedSystem --> Notifier : "sends notifications"
+
+
+@enduml

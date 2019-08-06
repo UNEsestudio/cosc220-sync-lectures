@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+
+    <style type="text/css">
+      @import url(http://fonts.googleapis.com/css?family=Lato|Source+Code+Pro|EB+Garamond);
+      @import url(lecture_notes.css);
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div id="targetEl"></div>
+    </div>
+
+    <script>
+      var path = location.pathname.substring(0, location.pathname.lastIndexOf('/'));
+      var deck = location.search.substring(1);
+      var deckpath = path + '/' + deck
+
+      var req = new XMLHttpRequest();
+      var reqListener = function () {
+        var text = this.responseText;
+        var slides = text.replace(/^--$/mg, "").split(/^(\w)*---(\w)*$/m)
+        var htmlBuf = ""
+        for (var i = 0; i < slides.length; i++) {
+          html = remark.convert(slides[i])
+          htmlBuf += html
+        }
+        //var html = remark.convert(this.responseText)
+        document.getElementById("targetEl").innerHTML = htmlBuf;
+
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+
+        // Setup MathJax
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        });
+        MathJax.Hub.Queue(function() {
+            $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+                return(elem.SourceElement());
+            }).parent().addClass('has-jax');
+        });
+
+        MathJax.Hub.Configured();
+      }
+      req.onload = reqListener
+      req.open("get", deckpath, true)
+      req.send();
+    </script>
+  </body>
+</html>

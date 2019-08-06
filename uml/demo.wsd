@@ -1,0 +1,9 @@
+@startuml bobandalice
+interface "Iterable<Item>" as Iterable_item {
+
+}
+
+class Inventory implements Iterable_item {
+
+}
+@enduml

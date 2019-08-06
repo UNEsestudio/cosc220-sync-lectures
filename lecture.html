@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(http://fonts.googleapis.com/css?family=Lato|Source+Code+Pro|Source+Code+Sans|Libre+Baskerville:400,700,400italic);
+      @import url(lecture_screen.css);
+    </style>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-git2.min.js" crossorigin></script>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js" crossorigin></script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript" crossorigin></script>
+    <script>
+      var path = location.pathname.substring(0, location.pathname.lastIndexOf('/'));
+      var deck = location.search.substring(1);
+      var deckpath = path + '/' + deck
+      var slideshow = remark.create({
+        highlightStyle: 'github',
+        sourceUrl: deckpath,
+        ratio: '16:10'
+      });
+
+      /* Setup MathJax
+      MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+      });
+      MathJax.Hub.Queue(function() {
+          $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+              return(elem.SourceElement());
+          }).parent().addClass('has-jax');
+      });
+
+      MathJax.Hub.Configured();*/
+    </script>
+  </body>
+</html>
