@@ -1,0 +1,337 @@
+@startuml carexample
+hide circle
+hide members
+skinparam classFontSize 16
+
+class Car
+
+Driver - Car : drives >
+Car *- "3..4" Wheel : has >
+Car -- Person : < owns
+Driver -|> Person: is a >
+@enduml
+
+@startuml oneboxclass
+hide circle
+hide members
+skinparam classFontSize 16
+class Dog
+@enduml
+
+@startuml oneboxclasscircle
+hide members
+skinparam classFontSize 16
+class Dog
+@enduml
+
+@startuml class
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+class Dog {
+    -colour: Colour
+    #weight: int
+
+    +feed(food: Food)
+    +pat()
+}
+@enduml
+
+@startuml classplantuml
+skinparam defaultFontSize 16
+class Dog {
+    -colour: Colour
+    #weight: int
+
+    +feed(food: Food)
+    +pat()
+}
+@enduml
+
+@startuml visibility
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+class MyClass {
+    +publicField: Int
+    #protectedField: Int
+    ~packageField: Int
+    -privateField: Int
+
+    +publicMethod():Int
+    #protectedMethod():Int
+    ~packageMethod(param: Double):Int
+    -privateMethod(param: String):Int
+}
+@enduml
+
+@startuml visibilityplantuml
+skinparam defaultFontSize 16
+
+class MyClass {
+    +publicField: Int
+    #protectedField: Int
+    ~packageField: Int
+    -privateField: Int
+
+    +publicMethod():Int
+    #protectedMethod():Int
+    ~packageMethod(param: Double):Int
+    -privateMethod(param: String):Int
+}
+@enduml
+
+@startuml abstract
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+class Vehicle <<abstract>> {
+    +drive()
+}
+@enduml
+
+@startuml abstractit
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+abstract class Vehicle {
+    +drive()
+}
+@enduml
+
+@startuml abstractitplantuml
+skinparam defaultFontSize 16
+
+abstract class Vehicle {
+    +drive()
+}
+@enduml
+
+
+@startuml interface
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+class Runnable <<interface>> {
+    +run()
+}
+@enduml
+
+@startuml interfaceit
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+interface Runnable {
+    +run()
+}
+@enduml
+
+@startuml interfaceitplantuml
+skinparam defaultFontSize 16
+
+interface Runnable {
+    +run()
+}
+@enduml
+
+@startuml abstractmethod
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+class AbstractClass <<abstract>> {
+    + concreteMethod(): Void
+    + <<abstract>> abstractMethod(): Void
+    + <<final>> finalMethod():Void
+    + <<static>> staticMethod():Void
+}
+@enduml
+
+@startuml abstractmethodit
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+class AbstractClass <<abstract>> {
+    + concreteMethod(): Void
+    + {abstract} abstractMethod(): Void
+    + {static} staticMethod():Void
+}
+@enduml
+
+@startuml abstractmethoditplantuml
+skinparam defaultFontSize 16
+
+abstract class AbstractClass {
+    + concreteMethod(): Void
+    + {abstract} abstractMethod(): Void
+    + {static} staticMethod():Void
+}
+@enduml
+
+
+@startuml inheritance
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+interface Messageable <<interface>> {
+    + sendMessage(m: Message):Void
+}
+
+class User {
+    +name: String
+
+    +login():Void
+    +logout():Void
+}
+
+class Moderator extends User implements Messageable {
+    +ban(u: User)
+}
+
+@enduml
+
+@startuml inheritanceplantuml
+skinparam defaultFontSize 16
+
+interface Messageable {
+    + sendMessage(m: Message):Void
+}
+
+class User {
+    +name: String
+
+    +login():Void
+    +logout():Void
+}
+
+class Moderator extends User implements Messageable {
+    +ban(u: User)
+}
+
+@enduml
+
+@startuml multiplicity
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+class Car {
+    +drive()
+}
+
+class Wheel {
+    +inflate()
+}
+
+Car "1" --- "3..4" Wheel
+
+@enduml
+
+@startuml navigability
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+class Car {
+    +drive()
+}
+
+class Wheel {
+    +inflate()
+}
+
+Car "1" --- "3..4" Wheel : < attached to
+
+Car "0..1" ---> "0..1" Car : following >
+
+@enduml
+
+@startuml linkedlist
+hide circle
+hide members
+skinparam nodesep 70
+skinparam defaultFontSize 16
+
+class SinglyLinkedList
+
+SinglyLinkedList --> "0..1" SinglyLinkedList : tail >
+@enduml
+
+@startuml linkedlistobj
+hide circle
+hide members
+skinparam defaultFontSize 16
+
+object "<u>node1: SinglyLinkedList</u>" as head
+note left: Head of list
+object "<u>node2: SinglyLinkedList</u>" as n1
+object "<u>node3: SinglyLinkedList</u>" as n2
+note right: End of list has no tail
+
+head -> n1 : tail > 
+n1 -> n2 : tail >
+
+@enduml
+
+
+@startuml aggregation
+hide circle
+hide members
+skinparam defaultFontSize 16
+
+class Car
+class Wheel
+
+Car *- "3..4" Wheel : has >
+@enduml
+
+@startuml composition
+hide circle
+hide members
+skinparam defaultFontSize 16
+
+Protest o- "1..*" Protester : comprises >
+@enduml
+
+@startuml package
+hide circle
+hide members
+skinparam defaultFontSize 16
+
+package "muck.client" {
+    class KryoClient
+}
+
+package "muck.server" {
+    class KryoServer
+    class WorkerManager
+}
+
+KryoClient .. KryoServer : TCP
+KryoServer -> WorkerManager
+@enduml
+
+@startuml packageinterface
+hide circle
+hide members
+skinparam defaultFontSize 16
+
+package "muck.client" {
+    class KryoClient
+}
+
+package "muck.server" {
+    class KryoServer
+    class WorkerManager
+}
+
+KryoClient -(0)- KryoServer : Kryonet
+KryoServer -> WorkerManager
+@enduml

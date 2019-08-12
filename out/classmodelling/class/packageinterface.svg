@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="260px" preserveAspectRatio="none" style="width:315px;height:260px;" version="1.1" viewBox="0 0 315 260" width="315px" zoomAndPan="magnify"><defs><filter height="300%" id="fkhwbpvaz4azp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster muck.client--><polygon fill="#FFFFFF" filter="url(#fkhwbpvaz4azp)" points="25,24,118,24,125,50.125,135,50.125,135,109,25,109,25,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="25" x2="125" y1="50.125" y2="50.125"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="87" x="29" y="42.6094">muck.client</text><!--cluster muck.server--><polygon fill="#FFFFFF" filter="url(#fkhwbpvaz4azp)" points="22,163,122,163,129,189.125,293,189.125,293,248,22,248,22,163" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="129" y1="189.125" y2="189.125"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="94" x="26" y="181.6094">muck.server</text><!--class KryoClient--><rect fill="#FEFECE" filter="url(#fkhwbpvaz4azp)" height="30.125" id="KryoClient" style="stroke: #A80036; stroke-width: 1.5;" width="78" x="41" y="63"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="72" x="44" y="84.6094">KryoClient</text><!--class KryoServer--><rect fill="#FEFECE" filter="url(#fkhwbpvaz4azp)" height="30.125" id="KryoServer" style="stroke: #A80036; stroke-width: 1.5;" width="84" x="38" y="202"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="78" x="41" y="223.6094">KryoServer</text><!--class WorkerManager--><rect fill="#FEFECE" filter="url(#fkhwbpvaz4azp)" height="30.125" id="WorkerManager" style="stroke: #A80036; stroke-width: 1.5;" width="119" x="157.5" y="202"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="113" x="160.5" y="223.6094">WorkerManager</text><!--link KryoClient to KryoServer--><path d="M80,93.145 C80,119.398 80,175.3773 80,201.7263 " fill="none" id="KryoClient-KryoServer" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="53" x="81" y="142.6094">Kryonet</text><ellipse cx="80" cy="147.3997" fill="#FFFFFF" rx="10" ry="10" style="stroke: #FFFFFF; stroke-width: 1.0;"/><path d="M72.9289,154.4707 A10,10 0 0 0 87.0711 154.4707" fill="#FFFFFF" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M87.0711,140.3286 A10,10 0 0 0 72.9289 140.3286" fill="#FFFFFF" style="stroke: #A80036; stroke-width: 1.5;"/><ellipse cx="80" cy="147.3997" fill="#FFFFFF" rx="6" ry="6" style="stroke: #A80036; stroke-width: 1.5;"/><!--link KryoServer to WorkerManager--><path d="M122.01,217 C132.016,217 142.022,217 152.028,217 " fill="none" id="KryoServer-WorkerManager" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="157.26,217,148.26,213,152.26,217,148.26,221,157.26,217" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml packageinterface
+hide circle
+hide members
+skinparam defaultFontSize 16
+
+package "muck.client" {
+    class KryoClient
+}
+
+package "muck.server" {
+    class KryoServer
+    class WorkerManager
+}
+
+KryoClient -(0)- KryoServer : Kryonet
+KryoServer -> WorkerManager
+@enduml
+
+PlantUML version 1.2019.06(Sat May 25 03:10:25 AEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+7
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: AU
+--></g></svg>

@@ -1,4 +1,4 @@
-@startuml
+@startuml sequence
 activate Alice #ffffff
 Alice -> Bob: Authentication Request
 activate Bob #ffffff

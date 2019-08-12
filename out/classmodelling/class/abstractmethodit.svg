@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="145px" preserveAspectRatio="none" style="width:201px;height:145px;" version="1.1" viewBox="0 0 201 145" width="201px" zoomAndPan="magnify"><defs><filter height="300%" id="f1j1k3ie5xpxlr" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class AbstractClass--><rect fill="#FEFECE" filter="url(#f1j1k3ie5xpxlr)" height="126.625" id="AbstractClass" style="stroke: #A80036; stroke-width: 1.5;" width="184" x="6" y="8"/><text fill="#000000" font-family="sans-serif" font-size="16" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="74" x="61" y="29.6094">«abstract»</text><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="98" x="49" y="49.7344">AbstractClass</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="189" y1="58.25" y2="58.25"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="189" y1="66.25" y2="66.25"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="172" x="12" y="86.8594">+concreteMethod(): Void</text><text fill="#000000" font-family="sans-serif" font-size="16" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="170" x="12" y="106.9844">+abstractMethod(): Void</text><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="145" x="12" y="127.1094">+staticMethod():Void</text><!--
+@startuml abstractmethodit
+hide circle
+skinparam classAttributeIconSize 0
+skinparam defaultFontSize 16
+
+class AbstractClass <<abstract>> {
+    + concreteMethod(): Void
+    + {abstract} abstractMethod(): Void
+    + {static} staticMethod():Void
+}
+@enduml
+
+PlantUML version 1.2019.06(Sat May 25 03:10:25 AEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+7
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: AU
+--></g></svg>

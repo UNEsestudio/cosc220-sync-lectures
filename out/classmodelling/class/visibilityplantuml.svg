@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="228px" preserveAspectRatio="none" style="width:288px;height:228px;" version="1.1" viewBox="0 0 288 228" width="288px" zoomAndPan="magnify"><defs><filter height="300%" id="frx7qsfbjbz26" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class MyClass--><rect fill="#FEFECE" filter="url(#frx7qsfbjbz26)" height="209" id="MyClass" style="stroke: #A80036; stroke-width: 1.5;" width="271" x="6" y="8"/><ellipse cx="107.25" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M109.8125,19.9375 Q109.9688,19.7344 110.1406,19.6406 Q110.3125,19.5313 110.5156,19.5313 Q110.875,19.5313 111.0938,19.7813 Q111.3125,20.0156 111.3125,20.5938 L111.3125,21.9531 Q111.3125,22.5313 111.0938,22.7813 Q110.875,23.0156 110.5156,23.0156 Q110.2031,23.0156 110,22.8438 Q109.8125,22.6563 109.7188,22.1719 Q109.6563,21.8438 109.5,21.6563 Q109.1719,21.3125 108.5938,21.1094 Q108.0313,20.8906 107.4531,20.8906 Q106.7344,20.8906 106.125,21.2031 Q105.5313,21.5156 105.0625,22.2188 Q104.6094,22.9219 104.6094,23.8906 L104.6094,24.9219 Q104.6094,26.0781 105.4375,26.8594 Q106.2813,27.625 107.7813,27.625 Q108.6719,27.625 109.2813,27.3906 Q109.6406,27.25 110.0469,26.8281 Q110.2969,26.5781 110.4375,26.5156 Q110.5781,26.4375 110.7656,26.4375 Q111.0781,26.4375 111.3125,26.6875 Q111.5625,26.9219 111.5625,27.25 Q111.5625,27.5781 111.2344,27.9531 Q110.7656,28.5 110.0156,28.8125 Q109,29.2344 107.7813,29.2344 Q106.3594,29.2344 105.2188,28.6406 Q104.2969,28.1719 103.6406,27.1719 Q103,26.1563 103,24.9531 L103,23.875 Q103,22.625 103.5781,21.5469 Q104.1719,20.4531 105.2031,19.875 Q106.2344,19.2813 107.3906,19.2813 Q108.0781,19.2813 108.6875,19.4531 Q109.2969,19.6094 109.8125,19.9375 Z "/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="60" x="127.75" y="30.5469">MyClass</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="276" y1="40" y2="40"/><ellipse cx="17" cy="55.5625" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="99" x="26" y="60.6094">publicField: Int</text><polygon fill="none" points="17,70.6875,21,74.6875,17,78.6875,13,74.6875" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="124" x="26" y="80.7344">protectedField: Int</text><polygon fill="none" points="17,91.8125,13,97.8125,21,97.8125" style="stroke: #1963A0; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="119" x="26" y="100.8594">packageField: Int</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="112.9375"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="105" x="26" y="120.9844">privateField: Int</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="276" y1="128.5" y2="128.5"/><ellipse cx="17" cy="144.0625" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="122" x="26" y="149.1094">publicMethod():Int</text><polygon fill="#FFFF44" points="17,159.1875,21,163.1875,17,167.1875,13,163.1875" style="stroke: #B38D22; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="147" x="26" y="169.2344">protectedMethod():Int</text><polygon fill="#4177AF" points="17,180.3125,13,186.3125,21,186.3125" style="stroke: #1963A0; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="245" x="26" y="189.3594">packageMethod(param: Double):Int</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="14" y="201.4375"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="222" x="26" y="209.4844">privateMethod(param: String):Int</text><!--
+@startuml visibilityplantuml
+skinparam defaultFontSize 16
+
+class MyClass {
+    +publicField: Int
+    #protectedField: Int
+    ~packageField: Int
+    -privateField: Int
+
+    +publicMethod():Int
+    #protectedMethod():Int
+    ~packageMethod(param: Double):Int
+    -privateMethod(param: String):Int
+}
+@enduml
+
+PlantUML version 1.2019.06(Sat May 25 03:10:25 AEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+7
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: AU
+--></g></svg>

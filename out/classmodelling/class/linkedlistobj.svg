@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="59px" preserveAspectRatio="none" style="width:1037px;height:59px;" version="1.1" viewBox="0 0 1037 59" width="1037px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ah2ozhkjj8f" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#f1ah2ozhkjj8f)" height="40.125" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="140.5" y="8"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="166" x="147.5" y="26.6094">node1: SinglyLinkedList</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="141.5" x2="319.5" y1="32.125" y2="32.125"/><path d="M6,13 L6,43.125 A0,0 0 0 0 6,43.125 L105,43.125 A0,0 0 0 0 105,43.125 L105,32 L140.34,28 L105,24 L105,23 L95,13 L6,13 A0,0 0 0 0 6,13 " fill="#FBFB77" filter="url(#f1ah2ozhkjj8f)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M95,13 L95,23 L105,23 L95,13 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="78" x="12" y="34.6094">Head of list</text><rect fill="#FEFECE" filter="url(#f1ah2ozhkjj8f)" height="40.125" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="393.5" y="8"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="166" x="400.5" y="26.6094">node2: SinglyLinkedList</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="394.5" x2="572.5" y1="32.125" y2="32.125"/><rect fill="#FEFECE" filter="url(#f1ah2ozhkjj8f)" height="40.125" style="stroke: #A80036; stroke-width: 1.5;" width="180" x="646.5" y="8"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="166" x="653.5" y="26.6094">node3: SinglyLinkedList</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="647.5" x2="825.5" y1="32.125" y2="32.125"/><path d="M862,13 L862,24 L826.658,28 L862,32 L862,43.125 A0,0 0 0 0 862,43.125 L1025,43.125 A0,0 0 0 0 1025,43.125 L1025,23 L1015,13 L862,13 A0,0 0 0 0 862,13 " fill="#FBFB77" filter="url(#f1ah2ozhkjj8f)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1015,13 L1015,23 L1025,23 L1015,13 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="142" x="868" y="34.6094">End of list has no tail</text><!--link head to n1--><path d="M320.767,28 C342.576,28 365.954,28 387.994,28 " fill="none" id="head-n1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="393.268,28,384.268,24,388.268,28,384.268,32,393.268,28" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="20" x="339" y="20.6094">tail</text><polygon fill="#000000" points="362,12.0625,370,16.0625,362,20.0625,362,12.0625" style="stroke: #000000; stroke-width: 1.0;"/><!--link n1 to n2--><path d="M573.767,28 C595.576,28 618.954,28 640.994,28 " fill="none" id="n1-n2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="646.268,28,637.268,24,641.268,28,637.268,32,646.268,28" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="16" lengthAdjust="spacingAndGlyphs" textLength="20" x="592" y="20.6094">tail</text><polygon fill="#000000" points="615,12.0625,623,16.0625,615,20.0625,615,12.0625" style="stroke: #000000; stroke-width: 1.0;"/><!--
+@startuml linkedlistobj
+hide circle
+hide members
+skinparam defaultFontSize 16
+
+object "<u>node1: SinglyLinkedList</u>" as head
+note left: Head of list
+object "<u>node2: SinglyLinkedList</u>" as n1
+object "<u>node3: SinglyLinkedList</u>" as n2
+note right: End of list has no tail
+
+head -> n1 : tail > 
+n1 -> n2 : tail >
+
+@enduml
+
+PlantUML version 1.2019.06(Sat May 25 03:10:25 AEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+7
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: AU
+--></g></svg>
