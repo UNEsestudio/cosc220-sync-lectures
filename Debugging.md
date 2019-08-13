@@ -334,7 +334,7 @@ We might use SQL to look at the data in the database, and logging or the debugge
 
 If we need to narrow it further, we might log the messages that are being sent from the client to the server (and what they are being received as). Or we might log the queries and updates the database is making.
 
-![deployment](out/classmodelling/program/debug2.svg)
+![deployment](out/classmodelling/program/debug3.svg)
 
 --
 
