@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="549px" preserveAspectRatio="none" style="width:532px;height:549px;" version="1.1" viewBox="0 0 532 549" width="532px" zoomAndPan="magnify"><defs><filter height="300%" id="f1da3k82lutkri" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class Parent--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="Parent" style="stroke: #708090; stroke-width: 1.5;" width="75" x="446" y="95"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="485.5" y="111.1387"/><!--class Decorator--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="Decorator" style="stroke: #708090; stroke-width: 1.5;" width="75" x="446" y="179"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="485.5" y="195.1387"/><!--class Composite--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="Composite" style="stroke: #708090; stroke-width: 1.5;" width="75" x="446" y="263"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="0" x="485.5" y="279.1387"/><!--class Leaf--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="Leaf" style="stroke: #708090; stroke-width: 1.5;" width="75" x="226" y="347"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="265.5" y="363.1387"/><!--class Comp--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="Comp" style="stroke: #708090; stroke-width: 1.5;" width="75" x="446" y="347"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="485.5" y="363.1387"/><!--class Listener--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="Listener" style="stroke: #708090; stroke-width: 1.5;" width="75" x="116" y="11"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="0" x="155.5" y="27.1387"/><!--class Observable--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="Observable" style="stroke: #708090; stroke-width: 1.5;" width="75" x="6" y="11"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="0" x="45.5" y="27.1387"/><!--class ConcListener--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="ConcListener" style="stroke: #708090; stroke-width: 1.5;" width="75" x="116" y="95"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="155.5" y="111.1387"/><!--class ConcObservable--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="ConcObservable" style="stroke: #708090; stroke-width: 1.5;" width="75" x="6" y="95"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="45.5" y="111.1387"/><!--class A--><rect fill="#FFE4B5" filter="url(#f1da3k82lutkri)" height="23.9688" id="A" style="stroke: #CD5C5C; stroke-width: 1.5;" width="75" x="336" y="11"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="375.5" y="27.1387"/><!--class B--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="B" style="stroke: #708090; stroke-width: 1.5;" width="75" x="446" y="11"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="485.5" y="27.1387"/><!--class C--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="C" style="stroke: #708090; stroke-width: 1.5;" width="75" x="336" y="95"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="375.5" y="111.1387"/><!--class D--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="D" style="stroke: #708090; stroke-width: 1.5;" width="75" x="226" y="95"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="265.5" y="111.1387"/><!--class E--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="E" style="stroke: #708090; stroke-width: 1.5;" width="75" x="336" y="263"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="375.5" y="279.1387"/><!--class F--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="F" style="stroke: #708090; stroke-width: 1.5;" width="75" x="226" y="263"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="265.5" y="279.1387"/><!--class G--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="G" style="stroke: #708090; stroke-width: 1.5;" width="75" x="116" y="263"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="155.5" y="279.1387"/><!--class I--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="I" style="stroke: #708090; stroke-width: 1.5;" width="75" x="336" y="347"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="375.5" y="363.1387"/><!--class J--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="J" style="stroke: #708090; stroke-width: 1.5;" width="75" x="317" y="431"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="356.5" y="447.1387"/><!--class K--><rect fill="#FFFFFF" filter="url(#f1da3k82lutkri)" height="23.9688" id="K" style="stroke: #708090; stroke-width: 1.5;" width="75" x="271" y="515"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="0" x="310.5" y="531.1387"/><!--link Parent to Decorator--><path d="M471.0904,138.797 C470.1358,152.8456 471.1889,168.5153 474.2499,178.9872 " fill="none" id="Parent-Decorator" style="stroke: #708090; stroke-width: 1.0;"/><polygon fill="none" points="464.1796,137.6825,474.2433,119.0352,478.0048,139.8883,464.1796,137.6825" style="stroke: #708090; stroke-width: 1.0;"/><!--link Parent to Decorator--><path d="M495.957,131.9394 C497.3518,142.7436 495.7217,167.2353 495.7217,167.2353 " fill="none" id="Parent-Decorator-1" style="stroke: #708090; stroke-width: 1.0;"/><polygon fill="#708090" points="493.2943,178.9872,498.4253,173.9204,495.7217,167.2353,490.5907,172.3021,493.2943,178.9872" style="stroke: #708090; stroke-width: 1.0;"/><polygon fill="#708090" points="493.3012,119.0352,491.1976,128.6568,494.3091,123.9326,499.0333,127.0441,493.3012,119.0352" style="stroke: #708090; stroke-width: 1.0;"/><line style="stroke: #708090; stroke-width: 1.0;" x1="494.3091" x2="495.9218" y1="123.9326" y2="131.7683"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="487.6942" y="139.1942">1</text><!--link Decorator to Composite--><path d="M483.5,203.0352 C483.5,217.3818 483.5,241.4615 483.5,257.777 " fill="none" id="Decorator-Composite" style="stroke: #708090; stroke-width: 1.0;"/><polygon fill="#708090" points="483.5,262.9872,487.5,253.9872,483.5,257.9872,479.5,253.9872,483.5,262.9872" style="stroke: #708090; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="473.85" y="252.0389">1</text><!--link Composite to Leaf--><path d="M433.2164,294.1992 C390.6772,310.4414 331.0409,333.2117 294.9622,346.9872 " fill="none" id="Composite-Leaf" style="stroke: #708090; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="430.7981,287.6297,451.9794,287.0352,435.7919,300.7088,430.7981,287.6297" style="stroke: #708090; stroke-width: 1.0;"/><!--link Composite to Comp--><path d="M471.0904,306.797 C470.1358,320.8456 471.1889,336.5153 474.2499,346.9872 " fill="none" id="Composite-Comp" style="stroke: #708090; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="464.1796,305.6825,474.2433,287.0352,478.0048,307.8883,464.1796,305.6825" style="stroke: #708090; stroke-width: 1.0;"/><!--link Composite to Comp--><path d="M494.6518,292.2484 C498.1839,308.5719 497.7314,332.6507 493.2943,346.9872 " fill="none" id="Composite-Comp-1" style="stroke: #708090; stroke-width: 1.0;"/><polygon fill="#708090" points="493.3012,287.0352,491.6862,296.7507,494.5552,291.8754,499.4305,294.7444,493.3012,287.0352" style="stroke: #708090; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="488.9004" y="307.1942">*</text><!--link Observable to Listener--><path d="M81.3125,23 C91.1577,23 101.0028,23 110.848,23 " fill="none" id="Observable-Listener" style="stroke: #708090; stroke-width: 1.0;"/><polygon fill="#708090" points="115.9963,23,106.9963,19,110.9963,23,106.9963,27,115.9963,23" style="stroke: #708090; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="100.9237" y="18.6065">*</text><!--link Listener to ConcListener--><path d="M153.5,55.0481 C153.5,69.032 153.5,84.5776 153.5,94.9872 " fill="none" id="Listener-ConcListener" style="stroke: #708090; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="146.5001,55.0352,153.5,35.0352,160.5001,55.0351,146.5001,55.0352" style="stroke: #708090; stroke-width: 1.0;"/><!--link Observable to ConcObservable--><path d="M43.5,55.0481 C43.5,69.032 43.5,84.5776 43.5,94.9872 " fill="none" id="Observable-ConcObservable" style="stroke: #708090; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="36.5001,55.0352,43.5,35.0352,50.5001,55.0351,36.5001,55.0352" style="stroke: #708090; stroke-width: 1.0;"/><!--link B to Parent--><path d="M483.5,35.0352 C483.5,51.0035 483.5,79.03 483.5,94.9872 " fill="none" id="B-Parent" style="stroke: #708090; stroke-width: 1.0;"/><!--link A to B--><path d="M411.3125,23 C422.8738,23 434.4351,23 445.9963,23 " fill="none" id="A-B" style="stroke: #708090; stroke-width: 1.0;"/><!--link A to C--><path d="M373.5,35.0352 C373.5,51.0035 373.5,79.03 373.5,94.9872 " fill="none" id="A-C" style="stroke: #708090; stroke-width: 1.0;"/><!--link D to C--><path d="M301.3125,107 C312.8738,107 324.4351,107 335.9963,107 " fill="none" id="D-C" style="stroke: #708090; stroke-width: 1.0;"/><!--link C to E--><path d="M373.5,119.0821 C373.5,149.9289 373.5,231.3551 373.5,262.5741 " fill="none" id="C-E" style="stroke: #708090; stroke-width: 1.0;"/><!--link F to E--><path d="M301.3125,275 C312.8738,275 324.4351,275 335.9963,275 " fill="none" id="F-E" style="stroke: #708090; stroke-width: 1.0;"/><!--link G to E--><path d="M168.8269,262.8792 C182.8081,252.65 204.5067,238.776 226,233 C258.1912,224.3491 268.8088,224.3491 301,233 C322.4933,238.776 344.1919,252.65 358.1731,262.8792 " fill="none" id="G-E" style="stroke: #708090; stroke-width: 1.0;"/><!--link E to Composite--><path d="M411.3125,275 C422.8738,275 434.4351,275 445.9963,275 " fill="none" id="E-Composite" style="stroke: #708090; stroke-width: 1.0;"/><!--link Leaf to I--><path d="M314.3189,359 C321.5447,359 328.7705,359 335.9963,359 " fill="none" id="Leaf-I" style="stroke: #708090; stroke-width: 1.0;"/><polygon fill="#708090" points="301.3125,359,307.3125,363,313.3125,359,307.3125,355,301.3125,359" style="stroke: #708090; stroke-width: 1.0;"/><!--link Leaf to J--><path d="M286.4829,380.215 C303.8879,396.2811 327.1704,417.7727 341.4861,430.9872 " fill="none" id="Leaf-J" style="stroke: #708090; stroke-width: 1.0;"/><polygon fill="#708090" points="276.5381,371.0352,278.2338,378.0441,285.3558,379.1745,283.66,372.1656,276.5381,371.0352" style="stroke: #708090; stroke-width: 1.0;"/><!--link Leaf to K--><path d="M270.1558,383.8483 C279.926,420.3237 297.7893,487.0136 305.1716,514.5741 " fill="none" id="Leaf-K" style="stroke: #708090; stroke-width: 1.0;"/><polygon fill="#708090" points="266.7363,371.0821,264.4249,377.9127,269.8411,382.6735,272.1525,375.8428,266.7363,371.0821" style="stroke: #708090; stroke-width: 1.0;"/><!--link I to J--><!--link J to K--><!--link Listener to A--><path d="M196.3915,23 C242.8548,23 289.3182,23 335.7815,23 " fill="none" id="Listener-A" style="stroke: #708090; stroke-width: 1.0;"/><polygon fill="#708090" points="191.3125,23,200.3125,27,196.3125,23,200.3125,19,191.3125,23" style="stroke: #708090; stroke-width: 1.0;"/><!--
+@startuml progclass1
+hide circle
+hide members
+hide stereotypes
+skinparam MinClassWidth 75
+
+
+skinparam class {
+    ArrowColor SlateGray
+    BorderColor SlateGray
+    BackgroundColor White
+    BackgroundColor<<highlight>> Moccasin
+    BorderColor<<highlight>> IndianRed
+    ArrowColor<<highlight>> IndianRed
+}
+
+class " " as Parent 
+class " " as Decorator extends Parent
+Decorator *-up-> "1" Parent
+
+interface " " as Composite
+Decorator -right-> "1" Composite 
+class " " as Leaf implements Composite
+class " " as Comp implements Composite
+Comp -up-> "*" Composite
+
+interface " " as Listener
+interface " " as Observable
+Observable -right-> "*" Listener
+class " " as ConcListener implements Listener
+class " " as ConcObservable implements Observable
+
+class " " as A <<highlight>>
+class " " as B
+class " " as C
+class " " as D
+class " " as E
+class " " as F
+class " " as G
+class " " as I
+class " " as J
+class " " as K
+
+B - - Parent
+
+A - B
+A - - C
+D -right- C
+
+C - - - E
+E -left- - F
+E -left- - G
+
+E - -right- Composite
+
+Leaf *-right- I
+Leaf *-right- J
+Leaf *-right- K
+I -[hidden]- J
+J -[hidden]- K
+
+Listener <- A
+@enduml
+
+PlantUML version 1.2019.06(Sat May 25 03:10:25 AEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.4+11
+Operating System: Linux
+OS Version: 5.2.7-200.fc30.x86_64
+Default Encoding: UTF-8
+Language: en
+Country: AU
+--></g></svg>

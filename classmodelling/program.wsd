@@ -2,7 +2,22 @@
 hide circle
 hide members
 skinparam MinClassWidth 75
-skinparam Linetype ortho
+
+class " " as Parent 
+class " " as Decorator extends Parent
+Decorator *-up-> "1" Parent
+
+interface " " as Composite
+Decorator -right-> "1" Composite 
+class " " as Leaf implements Composite
+class " " as Comp implements Composite
+Comp -up-> "*" Composite
+
+interface " " as Listener
+interface " " as Observable
+Observable -right-> "*" Listener
+class " " as ConcListener implements Listener
+class " " as ConcObservable implements Observable
 
 class " " as A
 class " " as B
@@ -11,24 +26,490 @@ class " " as D
 class " " as E
 class " " as F
 class " " as G
+class " " as I
+class " " as J
+class " " as K
+
+B -- Parent
 
 A - B
 A -- C
 D -right- C
 
-C -- CA
-C -- CB
+C --- E
+E -left-- F
+E -left-- G
+
+E --right- Composite
+
+Leaf *-right- I
+Leaf *-right- J
+Leaf *-right- K
+I -[hidden]- J
+J -[hidden]- K
+
+Listener <- A
+@enduml
+
+@startuml progclass1
+hide circle
+hide members
+hide stereotypes
+skinparam MinClassWidth 75
+
+
+skinparam class {
+    ArrowColor SlateGray
+    BorderColor SlateGray
+    BackgroundColor White
+    BackgroundColor<<highlight>> Moccasin
+    BorderColor<<highlight>> IndianRed
+    ArrowColor<<highlight>> IndianRed
+}
+
+class " " as Parent 
+class " " as Decorator extends Parent
+Decorator *-up-> "1" Parent
+
+interface " " as Composite
+Decorator -right-> "1" Composite 
+class " " as Leaf implements Composite
+class " " as Comp implements Composite
+Comp -up-> "*" Composite
+
+interface " " as Listener
+interface " " as Observable
+Observable -right-> "*" Listener
+class " " as ConcListener implements Listener
+class " " as ConcObservable implements Observable
+
+class " " as A <<highlight>>
+class " " as B
+class " " as C
+class " " as D
+class " " as E
+class " " as F
+class " " as G
+class " " as I
+class " " as J
+class " " as K
+
+B -- Parent
+
+A - B
+A -- C
+D -right- C
 
 C --- E
 E -left-- F
 E -left-- G
 
-E --right- H
+E --right- Composite
 
-H o-right- I
-H o-right- J
-H o-right- K
+Leaf *-right- I
+Leaf *-right- J
+Leaf *-right- K
 I -[hidden]- J
 J -[hidden]- K
 
+Listener <- A
+@enduml
+
+@startuml progclass2
+hide circle
+hide members
+hide stereotypes
+skinparam MinClassWidth 75
+
+
+skinparam class {
+    ArrowColor SlateGray
+    BorderColor SlateGray
+    BackgroundColor White
+    BackgroundColor<<highlight>> Moccasin
+    BorderColor<<highlight>> IndianRed
+    ArrowColor<<highlight>> IndianRed
+}
+
+class " " as Parent 
+class " " as Decorator extends Parent
+Decorator *-up-> "1" Parent
+
+interface " " as Composite
+Decorator -right-> "1" Composite 
+class " " as Leaf implements Composite
+class " " as Comp implements Composite
+Comp -up-> "*" Composite
+
+interface " " as Listener
+interface " " as Observable
+Observable -right-> "*" Listener
+class " " as ConcListener implements Listener
+class " " as ConcObservable implements Observable
+
+class " " as A 
+class " " as B <<highlight>>
+class " " as C
+class " " as D
+class " " as E
+class " " as F
+class " " as G
+class " " as I
+class " " as J
+class " " as K
+
+B -- Parent
+
+A - B
+A -- C
+D -right- C
+
+C --- E
+E -left-- F
+E -left-- G
+
+E --right- Composite
+
+Leaf *-right- I
+Leaf *-right- J
+Leaf *-right- K
+I -[hidden]- J
+J -[hidden]- K
+
+Listener <- A
+@enduml
+
+@startuml progclass3
+hide circle
+hide members
+hide stereotypes
+skinparam MinClassWidth 75
+
+
+skinparam class {
+    ArrowColor SlateGray
+    BorderColor SlateGray
+    BackgroundColor White
+    BackgroundColor<<highlight>> Moccasin
+    BorderColor<<highlight>> IndianRed
+    ArrowColor<<highlight>> IndianRed
+}
+
+class " " as Parent 
+class " " as Decorator extends Parent
+Decorator *-up-> "1" Parent
+
+interface " " as Composite
+Decorator -right-> "1" Composite 
+class " " as Leaf implements Composite
+class " " as Comp implements Composite
+Comp -up-> "*" Composite
+
+interface " " as Listener
+interface " " as Observable
+Observable -right-> "*" Listener
+class " " as ConcListener implements Listener
+class " " as ConcObservable implements Observable
+
+class " " as A 
+class " " as B 
+class " " as C <<highlight>>
+class " " as D
+class " " as E
+class " " as F
+class " " as G
+class " " as I
+class " " as J
+class " " as K
+
+B -- Parent
+
+A - B
+A -- C
+D -right- C
+
+C --- E
+E -left-- F
+E -left-- G
+
+E --right- Composite
+
+Leaf *-right- I
+Leaf *-right- J
+Leaf *-right- K
+I -[hidden]- J
+J -[hidden]- K
+
+Listener <- A
+@enduml
+
+@startuml programgrp1
+hide circle
+hide stereotype
+hide members
+skinparam MinClassWidth 75
+
+skinparam class {
+    ArrowColor SlateGray
+    BorderColor SlateGray
+    BackgroundColor White
+    BackgroundColor<<highlight>> Moccasin
+    BorderColor<<highlight>> IndianRed
+    ArrowColor<<highlight>> IndianRed
+}
+
+
+class " " as Parent 
+class " " as Decorator extends Parent
+Decorator *-up-> "1" Parent
+
+interface " " as Composite
+Decorator -right-> "1" Composite 
+class " " as Leaf implements Composite
+class " " as Comp implements Composite
+Comp -up-> "*" Composite
+
+interface " " as Listener <<highlight>> 
+interface " " as Observable <<highlight>>
+Observable -right-> "*" Listener #IndianRed 
+class " " as ConcListener <<highlight>>
+Listener <|-- ConcListener #IndianRed
+class " " as ConcObservable <<highlight>>
+Observable <|-- ConcObservable #IndianRed
+
+class " " as A
+class " " as B
+class " " as C
+class " " as D
+class " " as E
+class " " as F
+class " " as G
+class " " as I
+class " " as J
+class " " as K
+
+B -- Parent
+
+A - B
+A -- C
+D -right- C
+
+C --- E
+E -left-- F
+E -left-- G
+
+E --right- Composite
+
+Leaf *-right- I
+Leaf *-right- J
+Leaf *-right- K
+I -[hidden]- J
+J -[hidden]- K
+
+Listener <- A
+@enduml
+
+@startuml programgrp2
+hide circle
+hide stereotype
+hide members
+skinparam MinClassWidth 75
+
+skinparam class {
+    ArrowColor SlateGray
+    BorderColor SlateGray
+    BackgroundColor White
+    BackgroundColor<<highlight>> Moccasin
+    BorderColor<<highlight>> IndianRed
+    ArrowColor<<highlight>> IndianRed
+}
+
+
+class " " as Parent 
+class " " as Decorator extends Parent
+Decorator *-up-> "1" Parent
+
+interface " " as Composite
+Decorator -right-> "1" Composite 
+class " " as Leaf implements Composite
+class " " as Comp implements Composite
+Comp -up-> "*" Composite
+
+interface " " as Listener 
+interface " " as Observable 
+Observable -right-> "*" Listener  
+class " " as ConcListener 
+Listener <|-- ConcListener
+class " " as ConcObservable 
+Observable <|-- ConcObservable 
+
+class " " as A <<highlight>>
+class " " as B <<highlight>>
+class " " as C <<highlight>>
+class " " as D <<highlight>>
+class " " as E <<highlight>>
+class " " as F <<highlight>>
+class " " as G <<highlight>>
+class " " as I
+class " " as J
+class " " as K
+
+B -- Parent 
+
+A - B #IndianRed
+A -- C #IndianRed
+D -right- C #IndianRed
+
+C --- E #IndianRed
+E -left-- F #IndianRed
+E -left-- G #IndianRed
+
+E --right- Composite
+
+Leaf *-right- I
+Leaf *-right- J
+Leaf *-right- K
+I -[hidden]- J
+J -[hidden]- K
+
+Listener <- A
+@enduml
+
+
+@startuml programgrp3
+hide circle
+hide stereotype
+hide members
+skinparam MinClassWidth 75
+
+skinparam class {
+    ArrowColor SlateGray
+    BorderColor SlateGray
+    BackgroundColor White
+    BackgroundColor<<highlight>> Moccasin
+    BorderColor<<highlight>> IndianRed
+    ArrowColor<<highlight>> IndianRed
+}
+
+
+class " " as Parent <<highlight>>
+class " " as Decorator <<highlight>> 
+Parent <|-- Decorator #IndianRed
+Decorator *-up-> "1" Parent #IndianRed
+
+interface " " as Composite <<highlight>>
+Decorator -right-> "1" Composite #IndianRed
+class " " as Leaf 
+Composite <|.. Leaf 
+class " " as Comp <<highlight>>
+Composite <|.. Comp #IndianRed
+Comp -up-> "*" Composite #IndianRed
+
+interface " " as Listener 
+interface " " as Observable 
+Observable -right-> "*" Listener  
+class " " as ConcListener 
+Listener <|-- ConcListener
+class " " as ConcObservable 
+Observable <|-- ConcObservable 
+
+class " " as A 
+class " " as B <<highlight>>
+class " " as C 
+class " " as D 
+class " " as E 
+class " " as F 
+class " " as G 
+class " " as I
+class " " as J
+class " " as K
+
+B -- Parent #IndianRed
+
+A - B 
+A -- C 
+D -right- C 
+
+C --- E 
+E -left-- F 
+E -left-- G 
+
+E --right- Composite
+
+Leaf *-right- I
+Leaf *-right- J
+Leaf *-right- K
+I -[hidden]- J
+J -[hidden]- K
+
+Listener <- A
+@enduml
+
+
+@startuml programgrp4
+hide circle
+hide stereotype
+hide members
+skinparam MinClassWidth 75
+
+skinparam class {
+    ArrowColor SlateGray
+    BorderColor SlateGray
+    BackgroundColor White
+    BackgroundColor<<highlight>> Moccasin
+    BorderColor<<highlight>> IndianRed
+    ArrowColor<<highlight>> IndianRed
+}
+
+
+class " " as Parent 
+class " " as Decorator extends Parent
+Decorator *-up-> "1" Parent
+
+interface " " as Composite <<highlight>>
+Decorator -right-> "1" Composite #IndianRed
+class " " as Leaf <<highlight>>
+Composite <|.. Leaf #IndianRed
+class " " as Comp <<highlight>>
+Composite <|.. Comp #IndianRed
+Comp -up-> "*" Composite #IndianRed
+
+interface " " as Listener 
+interface " " as Observable 
+Observable -right-> "*" Listener  
+class " " as ConcListener 
+Listener <|-- ConcListener
+class " " as ConcObservable 
+Observable <|-- ConcObservable 
+
+class " " as A 
+class " " as B 
+class " " as C 
+class " " as D 
+class " " as E 
+class " " as F 
+class " " as G 
+class " " as I <<highlight>>
+class " " as J <<highlight>>
+class " " as K <<highlight>>
+
+B -- Parent 
+
+A - B 
+A -- C 
+D -right- C 
+
+C --- E 
+E -left-- F 
+E -left-- G 
+
+E --right- Composite
+
+Leaf *-right- I #IndianRed
+Leaf *-right- J #IndianRed
+Leaf *-right- K #IndianRed
+I -[hidden]- J
+J -[hidden]- K
+
+Listener <- A
 @enduml
