@@ -513,3 +513,38 @@ J -[hidden]- K
 
 Listener <- A
 @enduml
+
+@startuml debug1
+component Client
+component Server
+component Database
+
+Client -(0)- Server
+Server -(0)- Database
+@enduml
+
+@startuml debug2
+component Client 
+note left: inspect
+component Server
+note left: inspect
+component Database
+note left: inspect
+
+Client -(0)- Server
+Server -(0)- Database
+@enduml
+
+@startuml debug3
+component Client 
+note left: inspect
+component Server
+note left: inspect
+component Database
+note left: inspect
+
+Client -(0)- Server
+note left: inspect
+Server -(0)- Database
+note left: inspect
+@enduml
