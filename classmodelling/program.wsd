@@ -515,36 +515,55 @@ Listener <- A
 @enduml
 
 @startuml debug1
-component Client
-component Server
-component Database
+component Client 
 
-Client -(0)- Server
-Server -(0)- Database
+interface Kryo
+
+component Server
+
+interface JDBC
+
+database Database
+
+
+Client -( Kryo
+Kryo )- Server
+Server -( JDBC
+JDBC )- Database
 @enduml
 
 @startuml debug2
 component Client 
-note left: inspect
-component Server
-note left: inspect
-component Database
-note left: inspect
+note bottom: inspect
+interface Kryo
 
-Client -(0)- Server
-Server -(0)- Database
+component Server
+note bottom: inspect
+interface JDBC
+
+database Database
+note bottom: inspect
+
+Client -( Kryo
+Kryo )- Server
+Server -( JDBC
+JDBC )- Database
 @enduml
 
 @startuml debug3
 component Client 
-note left: inspect
+note bottom: inspect
+interface Kryo
+note bottom: inspect
 component Server
-note left: inspect
-component Database
-note left: inspect
+note bottom: inspect
+interface JDBC
+note bottom: inspect
+database Database
+note bottom: inspect
 
-Client -(0)- Server
-note left: inspect
-Server -(0)- Database
-note left: inspect
+Client -( Kryo
+Kryo )- Server
+Server -( JDBC
+JDBC )- Database
 @enduml

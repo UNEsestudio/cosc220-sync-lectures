@@ -312,8 +312,58 @@ How the loggers behave is configured in a config file. For example, whether we w
 
 ---
 
-### Where to look for messages
+### Where to look 
 
 Usually, it's a case of "divide and conquer", trying to see what is happening to the data at points where it is easy to find out.
 
-Suppose our
+Suppose our program looks like this:
+
+![deployment](out/classmodelling/program/debug1.svg)
+
+---
+
+### Where to look 
+
+We might use SQL to look at the data in the database, and logging or the debugger to look at what the value is in the client and the server.
+
+![deployment](out/classmodelling/program/debug2.svg)
+
+---
+
+### Where to look 
+
+If we need to narrow it further, we might log the messages that are being sent from the client to the server (and what they are being received as). Or we might log the queries and updates the database is making.
+
+![deployment](out/classmodelling/program/debug2.svg)
+
+--
+
+Each time, we are trying to discover "where is it ok" and "where did it go wrong" to give us a smaller space to look.
+
+---
+
+### Other sources of evidence
+
+There are some other sources of evidence that our buildchain is giving us:
+
+* Jenkins tells us which past builds succeeded and failed. So if our build is failing, is it succeeding on Jenkins? Did it suddently start failing, in which case in which commit?
+
+* GitLab tells us what has changed (including what code). If it was working recently, perhaps look and see what code has changed to cause it to break?
+
+---
+
+### Eventually
+
+As you debug, you are building up a mental model of
+
+* how the program should work, and 
+
+* how the program is (or isn't) working
+
+This is very similar to exploring a new codebase.
+
+Which is why when starting on a project, and trying to find out how someone else's code works, I sometimes advise:
+
+> Change something, and see what breaks
+
+(but don't check the broken code in!)
