@@ -1,0 +1,34 @@
+@startuml largeprog
+hide circle
+hide members
+skinparam MinClassWidth 75
+skinparam Linetype ortho
+
+class " " as A
+class " " as B
+class " " as C
+class " " as D
+class " " as E
+class " " as F
+class " " as G
+
+A - B
+A -- C
+D -right- C
+
+C -- CA
+C -- CB
+
+C --- E
+E -left-- F
+E -left-- G
+
+E --right- H
+
+H o-right- I
+H o-right- J
+H o-right- K
+I -[hidden]- J
+J -[hidden]- K
+
+@enduml
