@@ -8,7 +8,7 @@ COSC220
 
 ### Sequence Diagrams
 
-<img style="float: right;" src="/out/uml/seqDiagram/knockknock.svg" alt="Knock Knock Joke" />
+<img style="float: right;" src="out/uml/seqDiagram/knockknock.svg" alt="Knock Knock Joke" />
 
 
 * *Class diagrams* showed the structure of our entities (static relationships)
@@ -54,7 +54,7 @@ return groan
 
 ### Creating and destroying
 
-<img style="float: right;" src="/out/uml/seqDiagram/message_create.svg" alt="Create and destroy" />
+<img style="float: right;" src="out/uml/seqDiagram/message_create.svg" alt="Create and destroy" />
 
 
 * Creating participants is shown by putting their box further down the lifeline.
@@ -67,7 +67,7 @@ return groan
 
 ### Loops and Alts
 
-<img style="float: right;" src="/out/uml/seqDiagram/marking.svg" alt="Alt and Loop" />
+<img style="float: right;" src="out/uml/seqDiagram/marking.svg" alt="Alt and Loop" />
 
 * *Alternatives* and *loops* are shown as fragments
 
@@ -82,7 +82,7 @@ return groan
 
 ### Actors
 
-<img style="float: right;" src="/out/uml/seqDiagram/atm.svg" alt="Alt and Loop" />
+<img style="float: right;" src="out/uml/seqDiagram/atm.svg" alt="Alt and Loop" />
 
 * So far, I've been showing people using the `Actor` logo (stick figure)
 
