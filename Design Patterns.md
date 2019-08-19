@@ -240,7 +240,7 @@ subject.addObserver((s) -> {
 
 **Participants:** Participant, Mediator
 
-![Mediator](/out/patterns/patterns/mediator.svg)
+![Mediator](out/patterns/patterns/mediator.svg)
 
 ---
 
