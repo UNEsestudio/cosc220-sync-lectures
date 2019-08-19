@@ -11,3 +11,146 @@ Alice <-- Bob: another authentication Response
 deactivate Bob
 deactivate Alice
 @enduml
+
+@startuml knockknock
+hide footbox
+
+actor Dad
+actor Rebecca
+
+activate Dad
+Dad -> Rebecca : Knock Knock
+activate Rebecca
+return Who's there?
+
+Dad -> Rebecca : Owls go
+activate Rebecca
+return Owls go who?
+
+Dad -> Rebecca : Yes, they do
+activate Rebecca
+return groan
+@enduml
+
+
+@startuml message_create
+hide footbox
+
+actor Algernon
+participant "helpdesk: Helpdesk" as Helpdesk
+participant "t: Ticket" as Ticket
+actor Bertie
+
+
+activate Algernon
+Algernon -> Helpdesk : complain
+activate Helpdesk
+create Ticket
+Helpdesk -> Ticket : new
+return ticketnumber
+deactivate Algernon
+
+Ticket -> Bertie : notify
+activate Bertie
+deactivate Ticket
+
+Bertie -> Ticket : update
+activate Ticket
+return ok
+Bertie -> Helpdesk : resolved(t)
+deactivate Bertie
+activate Helpdesk
+Helpdesk -> Algernon : resolved(t)
+activate Algernon
+return ok
+Helpdesk -> Ticket : close
+destroy Ticket
+Helpdesk -> Bertie : closed(t)
+
+@enduml
+
+@startuml marking 
+hide footbox
+
+actor Teacher
+participant Moodle
+
+Teacher <- Moodle : assignment is due
+activate Teacher
+
+alt manual marking
+
+  loop each assignment
+
+    Teacher -> Moodle : get assignment
+    activate Moodle
+    return assignment
+
+    Teacher -> Teacher : mark
+    activate Teacher
+    return mark
+
+    Teacher -> Moodle : set mark
+    activate Moodle
+    return ok
+    
+  end
+
+else automated marking
+
+  Teacher -> Moodle : get marks
+  activate Moodle
+  return marks
+
+
+end
+
+  
+
+
+@enduml
+
+@startuml atm
+hide footbox
+
+actor Customer
+participant ATM
+actor Bank
+
+activate Customer
+Customer -> ATM : insert card
+activate ATM
+
+loop until valid PIN
+
+  ATM -> Customer : enter PIN
+  activate Customer
+  return PIN
+
+  ATM -> ATM : validate PIN
+  activate ATM
+  return pin status
+
+end
+
+ATM -> Customer : how can I help?
+activate Customer
+return withdraw $60
+
+ATM -> Bank : check balance
+activate Bank
+return balance
+
+alt balance > 60
+  ATM -> Customer : dispense $60
+  activate Customer 
+  return ok
+  ATM -> Bank : deduct $60
+  activate Bank
+  return ok
+else balance too low
+  ATM -> Customer : Sorry, your balance is too low
+end
+
+return card
+@enduml

@@ -1,0 +1,112 @@
+@startuml singleton
+skinparam classFontSize 16
+
+class Singleton {
+        
+    - {static} instance:Singleton
+
+    + {static} getInstance():Singleton
+}
+@enduml
+
+@startuml singleton_enum
+skinparam classFontSize 16
+
+enum Singleton {
+        
+    + {Static} INSTANCE
+
+}
+@enduml
+
+
+@startuml observer
+skinparam classFontSize 16
+
+abstract class Subject {
+    + addObserver(o: Observer)
+    + removeObserver(o: Observer)
+    # notify()    
+}
+
+interface Observer {
+    + update()
+}
+
+Subject o-> "*" Observer
+
+class ConcreteSubject extends Subject
+
+class ConcreteObserver implements Observer
+
+@enduml
+
+@startuml observer_seq 
+hide footbox
+
+actor Observer1
+actor Observer2
+participant Subject 
+
+
+Observer1 -> Subject : addObserver
+activate Subject
+return
+Observer2 -> Subject : addObserver
+activate Subject
+return
+
+activate Client
+Subject <- Client : modify
+activate Subject
+Subject -> Subject : notify
+activate Subject
+
+Subject -> Observer1 : update()
+activate Observer1
+return 
+
+Subject -> Observer2 : update()
+activate Observer2
+return 
+
+return
+return
+
+@enduml
+
+@startuml composite
+abstract class Component
+
+class Leaf 
+class Composite  
+Component <|-- Composite
+Component "*" <--o Composite 
+
+Component <|-- Leaf
+
+@enduml
+
+@startuml mediator
+skinparam Linetype ortho
+
+interface Mediator {
+    + send(target, message)
+}
+
+interface Colleague {
+    + receive(message)
+}
+
+
+
+class ConcreteColleague1 extends Colleague
+class ConcreteColleague2 extends Colleague
+
+class ConcreteMediator extends Mediator
+ConcreteMediator o-> ConcreteColleague1
+ConcreteMediator o-> ConcreteColleague2
+
+Mediator <- Colleague
+
+@enduml

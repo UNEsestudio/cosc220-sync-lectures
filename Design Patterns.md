@@ -4,13 +4,77 @@ class: center, middle
 
 ---
 
-### Gang of Four
+### Hillside Terrace in Peru
 
-<img alt="Image result for design patterns book" src="data:image/jpeg;base64,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" style="height: 400px;">
+![](https://upload.wikimedia.org/wikipedia/commons/7/71/Pisac006.jpg)
 
-[https://en.wikipedia.org/wiki/Design_Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+*image: Alexson Scheppa Peisino, public domain*
 
 ---
+
+### Lynchets in England
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/3e/Bishopstonelynchets2.jpg)
+
+*image: Mike Barratt, public domain*
+
+---
+
+### Hillside terraces in the Philippines
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Banaue_Rice_Terrace_Close_Up_%282%29.JPG/2560px-Banaue_Rice_Terrace_Close_Up_%282%29.JPG)
+
+*image: Agricmarketing, public domain*
+
+---
+
+### Christopher Alexander
+
+<img style="float: right;" src="https://upload.wikimedia.org/wikipedia/en/b/bf/The_Timeless_Way_of_Building.jpg" alt="The Timeless Way of Building" />
+
+
+*The Timeless Way of Building* (1979)
+
+* What does it mean for a building or a town to be *alive*? The "quality without a name"
+
+* *"Each building gets its character from just the patterns 
+which keep on repeating there."* 
+
+* What is needed to be able to "Sit on the porch, watching the world go by"?
+
+<div style="clear: both;"></div>
+
+---
+
+### Christopher Alexander
+
+<img style="float: right;" src="https://upload.wikimedia.org/wikipedia/en/e/e6/A_Pattern_Language.jpg" alt="A Pattern Language" />
+
+
+Example: *South-Facing Outdoors*
+
+* "People use open space if it is sunny, and do
+not use it if it isn’t, in all but desert climates"
+
+* "Always place buildings to the north* of the
+outdoor spaces that go with them, and keep
+the outdoor spaces to the south*. Never leave
+a deep band of shade between the building
+and the sunny part of the outdoors"
+
+* Related patterns: Half-Hidden Garden,
+Positive Outdoor Space, Wings of Light,
+Indoor Sunlight, North* Face, Sunny Place
+
+<div style="clear: both;"></div>
+
+---
+
+### "Gang of Four"
+
+<img style="float: right;" alt="Design Patterns (Gang of Four book)" src="https://images-na.ssl-images-amazon.com/images/I/81gtKoapHFL.jpg" style="height: 400px;">
+
+Takes the same concept of Design Patterns and applies it to Object-Oriented Software.
 
 > “One thing expert designers know not to do is solve every
 problem from first principles. Rather, they reuse solutions
@@ -25,35 +89,259 @@ ultimately reusable. They help designers reuse successful
 designs by basing new designs on prior experience. A
 designer who is familiar with such patterns can apply them
 immediately to design problems without having to
-rediscover them." -- from Gang Of Four
+rediscover them." 
+
+<div style="clear: both;"></div>
 
 ---
 
-## Christopher Alexander
+### A note on patterns
 
-![Christopher Alexander](http://www.devplan.com/pvmm/refer/assets/ChristopherAlexander.jpg)
-![A Pattern Language](https://upload.wikimedia.org/wikipedia/en/thumb/e/e6/A_Pattern_Language.jpg/220px-A_Pattern_Language.jpg)
-![The Timeless Way of Building](https://images-na.ssl-images-amazon.com/images/I/41CJ2M0--6L._AC_UL320_SR210,320_.jpg)
+As programming languages evolve, some patterns may become subsumed into the language. For example, consider a language before `while` loops:
 
+```fortran
+A: IF T > 10 GOTO B
+   PRINT T++
+   GOTO A
+B: PRINT END
+```
 
----
+--
 
-> "...each pattern represents our current best guess as to what arrangement of the physical environment will work to solve the problem presented. The empirical questions center on the problem—does it occur and is it felt in the way we have described it?—and the solution—does the arrangement we propose in fact resolve the problem? And the asterisks represent our degree of faith in these hypotheses. But of course, no matter what the asterisks say, the patterns are still hypotheses, all 253 of them—and are therefore all tentative, all free to evolve under the impact of new experience and observation"
+Whereas in a language with `while` it might become:
 
----
-
-![cosc220/images dp/alexander pattern.png](cosc220/images dp/alexanderpattern.png)
-
----
-
-### 
-
-<img src="http://g.gravizo.com/g?
-/**
- * @opt all
- */
-class Singleton {
-  static Singleton instance;
-  public static Singleton getSingleton();
+```java
+while(t <= 10) {
+  print(t++);
 }
-" />
+print(end);
+```
+
+--
+
+As we're working in Java, we can consider the OO design patterns from the book
+
+---
+
+## Parts of a pattern
+
+Design patterns typically have:
+
+--
+
+* A name
+
+--
+
+* An intent
+
+--
+
+* Applicability (when's it good?)
+
+--
+
+* Structure
+
+--
+
+* Consequences
+
+--
+
+* Examples
+
+--
+
+* Related patterns
+
+---
+
+### Singleton
+
+**Intent:** Ensure a class only has one instance and provide a global point of access to it
+
+**Participants:** Singleton
+
+**Collaborators:** Clients access a singleton solely through the Singleton's `getInstance` operation
+
+**Examples:** Servers, Communications sessions, Registries
+
+![Singleton](out/patterns/patterns/singleton.svg)
+![Singleton](out/patterns/patterns/singleton_enum.svg)
+
+
+```java
+public enum MuckServer {
+
+  INSTANCE;
+
+  // Fields and methods
+
+}
+```
+
+---
+
+### Observer
+
+**Intent:** Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and update automatically
+
+**Examples:** Storm warnings
+
+**Participants:** Subject, Observer
+
+**Collaborators:** addObserver(obs), notify(), update(subj)
+
+**Consequences:** Loose coupling between Subject and Observer
+
+![Observer](out/patterns/patterns/observer.svg)
+
+---
+
+### Observer
+
+<img alt="Observer sequence diagram" src="out/patterns/patterns/observer_seq.svg" style="float: right;" />
+
+The observer pattern lets the subject keep a list of observers that need notifying whenever anything changes.
+
+It is very similar to keeping a list of event listeners
+
+As `Observer` is often a *single abstract method* interface, it can often be expressed as a lamda
+
+```java
+public interface Observer {
+  void update();
+}
+```
+
+```java
+subject.addObserver((s) -> {
+  // do something
+})
+```
+
+<div style="clear: both;"></div>
+
+
+---
+
+### Observer in code
+
+(Demo)
+
+---
+
+### Mediator
+
+**Intent:** Mediator reduces chaotic dependencies between objects, when there are many participants. Rather than have each participant keep a reference to every other participator, instead they only keep a reference to a mediator.
+
+**Examples:** Telephone exchange, air traffic control
+
+**Participants:** Participant, Mediator
+
+![Mediator](/out/patterns/patterns/mediator.svg)
+
+---
+
+### Mediator in code
+
+```java
+public enum Mediator {
+  INSTANCE;
+
+  Map<String, Participant> participants = new HashMap<>();
+}
+```
+
+```java
+public interface Participant {
+  // 
+}
+```
+
+```java
+public class CP extends Participant {
+
+  public void foo() {
+    Mediator.INSTANCE.get("Alice").performAction();
+  }
+
+}
+```
+
+
+---
+
+### Composite
+
+**Intent:** Compose objects into tree structures to represent part-whole
+hierarchies. Composite lets clients treat individual objects and compositions
+of objects uniformly.
+
+**Participants:** Component, Leaf, Composite, Client
+
+**Collaborations:** Clients interact with Components
+
+**Examples:** Expression tree
+
+![Composite](out/patterns/patterns/composite.svg)
+
+---
+
+### Leaf node example
+
+Suppose we were creating an expression builder, that only worked on numbers
+
+```java
+public abstract class ExpessionNode {
+
+}
+```
+
+A number might be a valid node:
+
+```java
+public class NumberNode extends ExpressionNode {
+  double number;
+
+  public NumberNode(double:Int) {
+    this.number = n;
+  }
+}
+```
+
+---
+
+### Composite node example
+
+An *addition* node could also be a valid expression
+
+```java
+public class AddNode extends ExpressionNode {
+  ExpressionNode left;
+  ExpressionNode right;
+
+  public AddNode(ExpressionNode left, ExpressionNode right) {
+    this.left = left;
+    this.right = right;
+  }
+}
+```
+
+Although it has children, it itself is an ExpressionNode, so that you can say `((1 + 2) + 3)`
+
+```java
+ExpressionNode n = new AddNode(
+  new AddNode(new NumberNode(1), new NumberNode(2)),
+  new NumberNode(3)
+);
+```
+
+---
+
+### Composite examples
+
+* Nested menus - a menu is a list of menu items, but it can be a menu item
+
+* Graphics - shapes can be combined into a group, which in turn can be combined with other shapes or groups
