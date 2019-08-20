@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="69px" preserveAspectRatio="none" style="width:257px;height:69px;" version="1.1" viewBox="0 0 257 69" width="257px" zoomAndPan="magnify"><defs><filter height="300%" id="f1mknosf6t6fg6" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#f1mknosf6t6fg6)" height="50" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="63" x="6" y="8"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="6" x2="69" y1="35.6094" y2="35.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="43" x="16" y="27.5332">Asleep</text><rect fill="#FEFECE" filter="url(#f1mknosf6t6fg6)" height="50" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="61" x="184" y="8"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="184" x2="245" y1="35.6094" y2="35.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="194" y="27.5332">Awake</text><!--link Asleep to Awake--><path d="M69.1441,33 C99.9142,33 146.586,33 178.699,33 " fill="none" id="Asleep-Awake" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="183.723,33,174.723,29,178.723,33,174.723,37,183.723,33" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="78" x="87.5" y="26.4951">alarm sounds</text><!--link Awake to Asleep--><path d="M183.785,45.6096 C173.962,49.0406 162.928,52.2818 152.5,54 C129.696,57.7571 123.313,57.702 100.5,54 C91.8297,52.593 82.7401,50.1635 74.2488,47.4447 " fill="none" id="Awake-Asleep" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="69.0482,45.7211,76.3326,52.3496,73.7943,47.2942,78.8496,44.7559,69.0482,45.7211" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="50" x="101.5" y="50.4951">bed time</text><!--
+@startuml state_transitions
+
+state Asleep
+state Awake
+
+Asleep -> Awake : alarm sounds
+
+Awake -> Asleep : bed time
+
+@enduml
+
+PlantUML version 1.2019.06(Sat May 25 03:10:25 AEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.3+7
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: AU
+--></g></svg>

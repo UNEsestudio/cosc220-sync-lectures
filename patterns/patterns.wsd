@@ -217,3 +217,145 @@ class SuperpowerB extends Decorator {
 }
 
 @enduml
+
+@startuml basic_states
+hide empty description
+
+state State1
+state State2
+state State3
+
+@enduml
+
+@startuml basic_states_desc
+
+state State1
+state State2
+state State3
+
+@enduml
+
+@startuml state_transitions
+
+state Asleep
+state Awake
+
+Asleep -> Awake : alarm sounds
+
+Awake -> Asleep : bed time
+
+@enduml
+
+
+@startuml sandwich_states
+state Frozen
+state Thawed
+state Cooked
+state Eaten
+
+[*] -> Frozen
+
+Frozen --> Thawed : defrost
+Thawed --> Cooked : cook
+Thawed -> Frozen : freeze
+Cooked -> Eaten : eat
+Eaten -> [*]
+@enduml
+
+@startuml monster_states
+
+state Patrolling
+state Searching
+state Chasing
+state Fleeing
+
+[*] -> Patrolling
+
+Patrolling -> Searching : hears player
+Searching -> Patrolling : tick [ player.isDead ]
+
+Patrolling --> Chasing : sees player
+Searching --> Chasing : sees player
+Chasing --> Patrolling : tick [ player.isDead ]
+Chasing --> Fleeing : hit [ health < 10 ]
+Fleeing -> Patrolling : tick [ distance > 10 ]
+
+@enduml
+
+@startuml monster_scream
+
+state Patrolling
+state Searching
+state Chasing
+state Fleeing
+
+[*] -> Patrolling
+
+Patrolling -> Searching : hears player
+Searching -> Patrolling : tick [ player.isDead ]
+
+Patrolling --> Chasing : sees player
+Searching --> Chasing : sees player
+Chasing --> Patrolling : tick [ player.isDead ]
+Chasing --> Fleeing : hit [ health < 10 ] / scream()
+Fleeing -> Patrolling : tick [ distance > 10 ]
+
+@enduml
+
+@startuml monster_entry_exit
+
+state Patrolling
+state Searching
+state Chasing
+Chasing : entry / roar()
+state Fleeing
+Fleeing : entry / scream()
+Fleeing : exit / pant()
+
+[*] -> Patrolling
+
+Patrolling -> Searching : hears player
+Searching -> Patrolling : tick [ player.isDead ]
+
+Patrolling --> Chasing : sees player
+Searching --> Chasing : sees player
+Chasing --> Patrolling : tick [ player.isDead ]
+Chasing --> Fleeing : hit [ health < 10 ] 
+Fleeing -> Patrolling : tick [ distance > 10 ]
+
+@enduml
+
+@startuml monster_compound
+
+state Healthy {
+  state Patrolling
+  state Searching
+  state Chasing
+  [*] -> Patrolling
+
+  Patrolling : exit / startle()
+
+  Patrolling -> Searching : hears player
+  Searching -> Patrolling : tick [ player.isDead ]
+
+  Patrolling --> Chasing : sees player
+  Searching --> Chasing : sees player
+  Chasing --> Patrolling : tick [ player.isDead ]
+}
+
+[*] -> Healthy
+
+Chasing : entry / roar()
+state Fleeing
+Fleeing : entry / scream()
+
+Healthy --> Fleeing : hit [ health < 10 ] 
+Fleeing -> Healthy : tick [ health > 15 ]
+
+Healthy --> Incapacitated : tick [ health <= 0 ]
+Fleeing --> Incapacitated : tick [ health <= 0 ]
+Incapacitated -> [*]
+state Incapacitated 
+Incapacitated : entry / groan()
+
+@enduml

@@ -406,48 +406,6 @@ But functional languages tend to provide more advanced functions, such as `fold`
 
 ---
 
-### State and Strategy
-
-The state and strategy patterns are unusual in that they have the same structure, but differ in intent.
-
-**State intent:** We have an item whose behaviour should change depending on what state it is in.
-
-**Example:** Monster in a game (whether it patrols, chases, or runs away). By delegating the action to the state object, changing the state changes the behaviour.
-
-![State](out/patterns/patterns/state.svg)
-
-```java
-class Monster {
-  public void act() {
-    currentState.act(this);
-  }
-}
-```
-
----
-
-### Strategy pattern
-
-**Strategy intent:** We have some action that could be accomplished in a number of different ways
-
-**Example:** Sorting - a Sorter could apply one of a number of different algorithms. This pattern lets the strategy be changed.
-
-![Strategy](out/patterns/patterns/strategy.svg)
-
-```java
-public class Sorter {
-  public void setAlgorithm(SortAlgorithm alg) {
-    this.algorithm = alg;
-  }
-
-  public void sort(List<T> l) {
-    this.algorithm.sort(l);
-  }
-}
-```
-
----
-
 ### Decorator pattern
 
 **Intent:** The decorator pattern is a flexible alternative to subclassing, that can allow objects to be "decorated" with extra abilities at run-time.
