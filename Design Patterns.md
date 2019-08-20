@@ -345,3 +345,131 @@ ExpressionNode n = new AddNode(
 * Nested menus - a menu is a list of menu items, but it can be a menu item
 
 * Graphics - shapes can be combined into a group, which in turn can be combined with other shapes or groups
+
+---
+
+### Visitor pattern
+
+**Intent:** One or more operators need to navigate through a complex structure (e.g.: a tree) and perform an action on each node.
+
+**Participants:** Element, Visitor
+
+**Consequences:** The visitor and the structure are decoupled - the visitor does not need to understand the structure, only the elements.
+
+**Examples:** Running operations across an expression tree
+
+![Visitor](out/patterns/patterns/visitor.svg)
+
+---
+
+### Visitor pattern
+
+Suppose we have a tree that has one parent node and two child nodes. 
+
+The visitor doesn't have to know anything about how to navigate the structure it is calling. Instead, the structure will call `visit(el)` on the Visitor for each element.
+
+![Visitor](out/patterns/patterns/visitor_seq.svg)
+
+---
+
+### Combining patterns
+
+*Composite* and *Visitor* combine well. The composite pattern represents a complex data structure. The visitor pattern makes it possible to run arbitrary functions across the elements in the structure.
+
+```java
+public interface ExpessionVisitor {
+  void visit(ExpressionNode node);
+}
+```
+
+```java
+public abstract class ExpessionNode {
+  public void accept(ExpressionVisitor v);
+}
+```
+
+---
+
+### Patterns and Languages
+
+Visitor is often criticised as something that could be better implemented using functional programming. 
+
+For example, most data structures now already implement `forEach`
+
+```java
+myTree.forEach((e) -> {
+  // actions I want to perform on elements
+}).
+```
+
+But functional languages tend to provide more advanced functions, such as `fold` or `map`
+
+---
+
+### State and Strategy
+
+The state and strategy patterns are unusual in that they have the same structure, but differ in intent.
+
+**State intent:** We have an item whose behaviour should change depending on what state it is in.
+
+**Example:** Monster in a game (whether it patrols, chases, or runs away). By delegating the action to the state object, changing the state changes the behaviour.
+
+![State](out/patterns/patterns/state.svg)
+
+```java
+class Monster {
+  public void act() {
+    currentState.act(this);
+  }
+}
+```
+
+---
+
+### Strategy pattern
+
+**Strategy intent:** We have some action that could be accomplished in a number of different ways
+
+**Example:** Sorting - a Sorter could apply one of a number of different algorithms. This pattern lets the strategy be changed.
+
+![Strategy](out/patterns/patterns/strategy.svg)
+
+```java
+public class Sorter {
+  public void setAlgorithm(SortAlgorithm alg) {
+    this.algorithm = alg;
+  }
+
+  public void sort(List<T> l) {
+    this.algorithm.sort(l);
+  }
+}
+```
+
+---
+
+### Decorator pattern
+
+**Intent:** The decorator pattern is a flexible alternative to subclassing, that can allow objects to be "decorated" with extra abilities at run-time.
+
+**Example:** Special abilities in games, request handlers can be decorated with authentication filters 
+
+<img alt="Decorator" src="out/patterns/patterns/decorator.svg" style="float: right;" />
+
+```java
+public class CountingMap<K,V> implements Map<K,V> {
+  Map<K,V> m;
+  int count = 0;
+
+  public void CountingMap(Map<k,V> m) {
+    this.m = m;
+  }
+
+  public void put(K key, V value) {
+    this.count += 1;
+    m.put(key, value);
+  }
+}
+```
+
+<div class="clear: both;"></div>

@@ -110,3 +110,110 @@ ConcreteMediator o-> ConcreteColleague2
 Mediator <- Colleague
 
 @enduml
+
+@startuml visitor
+skinparam Linetype ortho
+
+abstract class Element {
+    + accept(v: Visitor)
+}
+Element <|-- ConcreteElementA 
+Element <|-- ConcreteElementB 
+
+interface Visitor {
+    + visit(e: Element)
+}
+Visitor <|-- ConcreteVisitor
+
+Client --> Visitor
+Client --> Element
+
+@enduml
+
+@startuml visitor_seq 
+    hide footbox
+
+
+    participant Visitor
+    participant Client
+    participant ParentElement
+    participant ChildElementA
+    participant ChildElementB
+
+    activate Visitor
+    Visitor -> Client : call(visitor)
+    activate Client
+    Client -> ParentElement : accept(visitor)
+    activate ParentElement
+    ParentElement -> Visitor : visit(parentElement)
+    activate Visitor
+    return
+    ParentElement -> ChildElementA : accept(visitor)
+    activate ChildElementA
+    ChildElementA -> Visitor : visit(childElementA)
+    activate Visitor
+    return
+    return
+    ParentElement -> ChildElementB : accept(visitor)
+    activate ChildElementB
+    ChildElementB -> Visitor : visit(childElementB)
+    activate Visitor
+    return
+    return
+    return
+    return
+@enduml
+
+@startuml strategy
+class Context {
+    + action()
+}
+
+interface Strategy {
+    + algorithm()
+}
+Strategy <|.. StrategyA
+Strategy <|.. StrategyB
+
+Context o-> "1" Strategy
+@enduml
+
+@startuml state
+class Context {
+    + action()
+}
+
+interface State {
+    + handle()
+}
+State <|.. StateA
+State <|.. StateB
+
+Context o-> "1" State
+@enduml
+
+@startuml decorator
+
+abstract class Component {
+  + operation()
+}
+class ConcreteComponent {
+    + operation()
+}
+Component <|-- ConcreteComponent
+abstract class Decorator {
+    + operation()
+}
+Component <|-- Decorator
+Decorator o--> "1" Component
+
+
+class SuperpowerA extends Decorator {
+    + operation()
+}
+
+class SuperpowerB extends Decorator {
+    + operation()
+}
+
+@enduml
