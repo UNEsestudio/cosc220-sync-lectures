@@ -32,7 +32,7 @@ SSH (Secure Shell) keys are way that you can authenticate a connection to anothe
 
    If it's there, that should print out the contents of the *public key* (the part you can safely share). If it isn't you'll get "No such file or directory"
 
-1. Open a shell on turing, and generate an ssh key. The default options will be fine, and don't worry about setting a passphrase.
+1. If you don't already have an ssh key, and need to generate one: Open a shell on turing, and generate an ssh key. The default options will be fine, and don't worry about setting a passphrase.
 
    ```bash
    ssh-keygen
@@ -110,11 +110,18 @@ Let's practice branching, committing, merging, and pushing.
 
 3. Commit your change. Don't forget, you'll need to use `git add` first to tell git which changes you intend to commit.
 
-   ```sh
-   git add names.txt
-   git commit -m "Added Suzie Student"
-   ```  
+    ```sh
+    git add names.txt
+    git commit -m "Added Suzie Student"
+    ```  
 
+    **Beware**: This is a common place to hit your first bump. If you miss the `-m "Added Suzie Student"` and just say `git commit`,
+    git will open up the *default editor* so you can type a comment. The default editor on some systems is `vim`, which works a little
+    differently than you might expect and doesn't show its commands on the screen.
+
+    By default, vim opens up in command mode. (You won't be able to type.) To go into `insert` mode, press `i`. To exit insert mode, press
+    `escape`. To save and exit (complete the commit), type `:wq` from command mode (`:` to start a command, `w` for write, `q` for quit, and hit enter). 
+    To abort the commit, type `:q!` from command mode (`:` to start a command, `q` for quit, and `!` to mean "yes, really without saving my changes").
 
 7. If you haven't already (you should have), request access to 
    [http://gitlab.une.edu.au/groups/cosc220-2020](http://gitlab.une.edu.au/groups/cosc220-2020) from the GitLab web UI (so you can push your changes)
@@ -169,4 +176,4 @@ What you are looking for is a revision where the commit comment says that one pe
 
 The easiest way to find it is from GitLab's web UI. Browse to the project on GitLab and click the History button.
 
-https://gitlab.une.edu.au/cosc220-2019/tut-1-someone-followed
+https://gitlab.une.edu.au/cosc220-2020/tut-1-someone-was-followed
