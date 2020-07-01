@@ -24,6 +24,14 @@ If you are working locally on a home Windows computer, the set-up is a little mo
 
 SSH (Secure Shell) keys are way that you can authenticate a connection to another server without using a password. If you are working on turing:
 
+1. You might already have an ssh-key generated, in which case you can re-use it. To see if you do, 
+
+   ```bash
+   cat ~/.ssh/id_rsa.pub
+   ```
+
+   If it's there, that should print out the contents of the *public key* (the part you can safely share). If it isn't you'll get "No such file or directory"
+
 1. Open a shell on turing, and generate an ssh key. The default options will be fine, and don't worry about setting a passphrase.
 
    ```bash
