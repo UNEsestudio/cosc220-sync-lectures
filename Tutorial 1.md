@@ -1,18 +1,28 @@
 ## Tutorial 1
 
-## First, try git
+## First, try git out git in the browser.
 
-Learn Git Branching is an in-browser tutorial. It teaches you git in 15 minutes, and is generally very good indeed.
+[Learn Git Branching](https://learngitbranching.js.org) is an in-browser tutorial. 
 
-So, [try git](https://learngitbranching.js.org). For week 1, tutorials 1, 2 and 3 in the Introduction Sequence are the relevant ones. (We won't worry about rebase in tutorial 4)
+For the first tutorial, let's take a look at the **Introduction Sequence** steps:
+
+1. Introduction to Git Commits
+2. Branching in Git
+3. Merging in Git
+
+We won't worry about rebase in step 4. The later tutorials (*Ramping Up...* etc) are also more complex than we need at the moment.
 
 ## Now the exercise
 
 First, we need to get you set up with access to GitLab. 
 
-### Set up an SSH key
+### Set up an SSH key 
 
-SSH (Secure Shell) keys are way that you can authenticate a connection to another server without using a password. I recommend using them so you don't keep having to type your username and password whenever you use git to talk to the class sourcecode repository.
+There are two ways that git can communicate with the source code repository: over `HTTP` and over `SSH`. HTTP bumps into the problem that you have to keep typing in your password, which can get annoying, so if you are working on **turing** or on a Unix-like environment (e.g. a Mac) I usually recommend using SSH because you can set up an *ssh key* that will do the authentication for you.
+
+If you are working locally on a home Windows computer, the set-up is a little more complex, so I recommend starting off working on turing (using x2go) and moving to Windows when you feel more confident.
+
+SSH (Secure Shell) keys are way that you can authenticate a connection to another server without using a password. If you are working on turing:
 
 1. Open a shell on turing, and generate an ssh key. The default options will be fine, and don't worry about setting a passphrase.
 
@@ -20,6 +30,9 @@ SSH (Secure Shell) keys are way that you can authenticate a connection to anothe
    ssh-keygen
    ```
    
+   This should also work for you if you are on a Mac (in Terminal) or Windows Subsystem for Linux. If your are working just in Windows, it should also work in the `Git-Bash` program that
+   comes with git and provides a little Unix-like shell environment.
+
 2. Open the file `~/.ssh/id_rsa.pub` (the "public key") and copy the contents to the clipboard
 
    ```bash
@@ -40,33 +53,27 @@ Now git can use your SSH key to authenticate you to GitLab if you run git comman
 
 You can create and save keys from other computers (eg, your laptop) if you want to be able to work from there too.
 
-### Request access to the cosc220-2019 group
+### Request access to the cosc220-2020 group
 
-We'll need to get you into the cosc220-2019 group on GitLab. If you log in and go to the group page: https://gitlab.une.edu.au/cosc220-2019  then you should see a "request access" button.
+We'll need to get you into the cosc220-2020 group on GitLab. If you log in and go to the group page: https://gitlab.une.edu.au/cosc220-2020  then you should see a "request access" button.
 
 ### Someone was followed...
 
 1. Clone the repository for this part of the tutorial
 
    ```
-   git clone git@gitlab.une.edu.au:cosc220-2019/tut-1-someone-followed.git
+   git clone git@gitlab.une.edu.au:cosc220-2020/tut-1-someone-was-followed.git
    ```
 
-   Now if you do an `ls`, you'll see you have a new directory called `tut-1-someone-followed`, containing the git repository. `cd` into the directory. 
+   Now if you do an `ls`, you'll see you have a new directory called `tut-1-someone-was-followed`, containing the git repository. `cd` into the directory. 
    
    ```bash
-   cd tut-1-someone-followed
+   cd tut-1-someone-was-followed
    ```      
    
    Now we can start working with git on this repository
    
-2. If you're working on turing, set your proxy details for git
-
-   ```bash
-   setproxy
-   ```   
-   
-3. Set your username and email address in the git config
+2. Set your username and email address in the git config
 
    ```
    git config user.name "Your Name"
@@ -101,8 +108,8 @@ Let's practice branching, committing, merging, and pushing.
    ```  
 
 
-7. If you haven't already, request access to 
-   [http://gitlab.une.edu.au/groups/cosc220-2019](http://gitlab.une.edu.au/groups/cosc220-2019) from the GitLab web UI (so you can push your changes)
+7. If you haven't already (you should have), request access to 
+   [http://gitlab.une.edu.au/groups/cosc220-2020](http://gitlab.une.edu.au/groups/cosc220-2020) from the GitLab web UI (so you can push your changes)
 
 4. Push your new branch to GitHub with `git push -u origin {your_branch_name}`. e.g.,
 
