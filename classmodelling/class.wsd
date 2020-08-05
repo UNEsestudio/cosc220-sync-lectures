@@ -6,7 +6,7 @@ skinparam classFontSize 16
 class Car
 
 Driver - Car : drives >
-Car *- "3..4" Wheel : has >
+Car o- "3..4" Wheel : has >
 Car -- Person : < owns
 Driver -|> Person: is a >
 @enduml
@@ -289,7 +289,7 @@ skinparam defaultFontSize 16
 class Car
 class Wheel
 
-Car *- "3..4" Wheel : has >
+Car o- "3..4" Wheel : has >
 @enduml
 
 @startuml composition
@@ -297,7 +297,7 @@ hide circle
 hide members
 skinparam defaultFontSize 16
 
-Protest o- "1..*" Protester : comprises >
+Protest *- "1..*" Protester : comprises >
 @enduml
 
 @startuml package

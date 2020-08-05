@@ -46,7 +46,7 @@ If we're putting them in documentation, it's easier to *write the diagram in cod
 class Car
 
 Driver - Car : drives >
-Car *- "3..4" Wheel : has >
+Car o- "3..4" Wheel : has >
 Car -- Person : < owns
 Driver -|> Person: is a >
 ```
@@ -218,7 +218,7 @@ Note that for an *object diagram*, we used two cells in the box.
 
 ---
 
-### Aggregation (black diamond)
+### Aggregation (white diamond)
 
 The wheels are part of the car. But they can be taken off - the wheels' lifecycle and the car's lifecycle aren't identical
 
@@ -226,7 +226,7 @@ The wheels are part of the car. But they can be taken off - the wheels' lifecycl
 
 --
 
-### Composition (white diamond)
+### Composition (black diamond)
 
 A protest only exists if there's one or more protesters. And if you're not at a protest, you're not a protester. (The lifecycles of the objects are coincident.)
 
