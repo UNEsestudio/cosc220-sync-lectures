@@ -70,7 +70,7 @@ We'll need to get you into the cosc220-2020 group on GitLab. If you log in and g
 1. Clone the repository for this part of the tutorial
 
    ```
-   git clone git@gitlab.une.edu.au:cosc220-2020/tut-1-someone-was-followed.git
+   git clone git@gitlab.une.edu.au:cosc220-2021/cosc220-tutorial-1-someone-was-followed.git
    ```
 
    Now if you do an `ls`, you'll see you have a new directory called `cosc220-tutorial-1-someone-was-followed`, containing the git repository. `cd` into the directory. 
