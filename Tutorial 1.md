@@ -61,9 +61,9 @@ Now git can use your SSH key to authenticate you to GitLab if you run git comman
 
 You can create and save keys from other computers (eg, your laptop) if you want to be able to work from there too.
 
-### Request access to the cosc220-2020 group
+### Request access to the cosc220-2021 group
 
-We'll need to get you into the cosc220-2020 group on GitLab. If you log in and go to the group page: https://gitlab.une.edu.au/cosc220-2020  then you should see a "request access" button.
+We'll need to get you into the cosc220-2020 group on GitLab. If you log in and go to the group page: https://gitlab.une.edu.au/cosc220-2021  then you should see a "request access" button.
 
 ### Someone was followed...
 
@@ -73,10 +73,10 @@ We'll need to get you into the cosc220-2020 group on GitLab. If you log in and g
    git clone git@gitlab.une.edu.au:cosc220-2020/tut-1-someone-was-followed.git
    ```
 
-   Now if you do an `ls`, you'll see you have a new directory called `tut-1-someone-was-followed`, containing the git repository. `cd` into the directory. 
+   Now if you do an `ls`, you'll see you have a new directory called `cosc220-tutorial-1-someone-was-followed`, containing the git repository. `cd` into the directory. 
    
    ```bash
-   cd tut-1-someone-was-followed
+   cd cosc220-tutorial-1-someone-was-followed
    ```      
    
    Now we can start working with git on this repository
@@ -98,7 +98,7 @@ Let's practice branching, committing, merging, and pushing.
 
 1. Create a new branch, named `s{your_student_number}`
 
-   e.g., `git branch s1234`
+   e.g., `git branch s1234`  (don't forget to replace 1234 with your number!)
 
 2. Change to this new branch
 
@@ -123,8 +123,16 @@ Let's practice branching, committing, merging, and pushing.
     `escape`. To save and exit (complete the commit), type `:wq` from command mode (`:` to start a command, `w` for write, `q` for quit, and hit enter). 
     To abort the commit, type `:q!` from command mode (`:` to start a command, `q` for quit, and `!` to mean "yes, really without saving my changes").
 
+    If you'd like a vim tutorial: https://www.openvim.com/
+
+    If you'd like to change your default editor to nano:   
+    Open `~/.bashrc`  
+    Add `export EDITOR=nano`  
+    Close your terminal and open a new one (or run `source ~/.bashrc`) to make the setting take effect.
+
+
 7. If you haven't already (you should have), request access to 
-   [http://gitlab.une.edu.au/groups/cosc220-2020](http://gitlab.une.edu.au/groups/cosc220-2020) from the GitLab web UI (so you can push your changes)
+   [http://gitlab.une.edu.au/groups/cosc220-2021](http://gitlab.une.edu.au/groups/cosc220-2021) from the GitLab web UI (so you can push your changes)
 
 4. Push your new branch to GitHub with `git push -u origin {your_branch_name}`. e.g.,
 
@@ -176,4 +184,4 @@ What you are looking for is a revision where the commit comment says that one pe
 
 The easiest way to find it is from GitLab's web UI. Browse to the project on GitLab and click the History button.
 
-https://gitlab.une.edu.au/cosc220-2020/tut-1-someone-was-followed
+https://gitlab.une.edu.au/cosc220-2021/cosc220-tutorial-1-someone-was-followed
