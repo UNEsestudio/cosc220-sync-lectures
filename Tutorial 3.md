@@ -12,7 +12,7 @@ I would like you to create a ticket on GitLab for your group's first feature as 
 
 ### Ensure you have access to the class repository
 
-* Check that you have access to the cosc220-2020 group on GitLab
+* Check that you have access to the cosc220-2021 group on GitLab
 
   You should be able to see this by visiting https://gitlab.une.edu.au/cosc220-2021/
   
